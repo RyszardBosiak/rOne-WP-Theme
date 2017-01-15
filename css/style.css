@@ -1,0 +1,77 @@
+html {
+  font-size: 62.5%; }
+
+* {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.8rem; }
+
+h3 {
+  font-size: 2.6rem; }
+
+h4 {
+  font-size: 2.2rem; }
+
+h5 {
+  font-size: 1.8rem; }
+
+h5 {
+  font-size: 1.6rem; }
+
+#main-menu-opener {
+  display: block;
+  border: 2px solid #99ce66;
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  font-size: 0;
+  transition-duration: 0.3s; }
+  #main-menu-opener.menu-active {
+    left: 20rem;
+    transition-duration: 0.3s; }
+  #main-menu-opener span {
+    display: block;
+    width: 4rem;
+    height: .3rem;
+    background: #99ce66;
+    margin: .5rem auto; }
+
+#main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20rem;
+  left: -20rem;
+  background: transparent;
+  transition-duration: 0.3s; }
+  #main-menu.menu-active {
+    left: 0;
+    background: #FFF;
+    transition-duration: 0.3s; }
+
+body {
+  background: #99ce66; }
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    color: pink !important; } }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  h2 {
+    color: blue !important; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+  h2 {
+    color: red !important; } }
+
+@media only screen and (min-width: 1280px) {
+  h2 {
+    color: #99ce66 !important; } }

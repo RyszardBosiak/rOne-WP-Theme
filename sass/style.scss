@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'styleguide';
+@import 'media-queries';
+@import 'modules/main-menu';
+
+body {
+	background: $main-green;
+} 
+
+h2 {
+	@include respond-to(xs) {
+		color: pink !important;
+	}
+	@include respond-to(sm) {
+		color: blue !important;
+	}
+	@include respond-to(md) {
+		color: red !important;
+	}
+	@include respond-to(lg) {
+		color: $main-green !important;
+	}
+}

@@ -1,0 +1,44 @@
+
+@import '../_variables';
+
+#main-menu-opener {
+	display: block;
+	border:2px solid $main-green;
+	width:5rem;
+	height:5rem;
+	position:fixed;
+	left:0;
+	font-size:0;
+	transition-duration: $default-easing-time;
+	&.menu-active {
+		left:20rem;
+		transition-duration: $default-easing-time;
+
+	}
+	span {
+		display: block;
+		width:4rem;
+		height:.3rem;
+		background:$main-green;
+		margin:.5rem auto;
+
+	}
+}
+
+#main-menu {
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:20rem;
+	left:-20rem;
+	background:transparent;
+	transition-duration: $default-easing-time;
+	
+	&.menu-active {
+		left:0;
+		background:$white;
+		transition-duration: $default-easing-time;
+	
+	}
+}
